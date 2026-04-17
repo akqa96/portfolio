@@ -964,18 +964,17 @@ function SEIM(id){
 }
 
 // ═══ INIT ═══
+document.getElementById('s-dashboard').innerHTML = '<div style="padding:20px;color:#f59e0b;font-size:14px">جاري التحميل...</div>';
 try {
   RT();
-} catch(e) {}
+} catch(e) { document.getElementById('s-dashboard').innerHTML += '<div style="color:#ef4444">RT خطأ: '+e.message+'</div>'; }
 try {
   RF();
-} catch(e) {}
+} catch(e) { document.getElementById('s-dashboard').innerHTML += '<div style="color:#ef4444">RF خطأ: '+e.message+'</div>'; }
 try {
   RD();
 } catch(e) {
-  // Show error on screen for debugging
-  var sc = document.getElementById('s-dashboard');
-  if(sc) sc.innerHTML = '<div style="padding:20px;color:#ef4444;font-size:13px">خطأ: ' + e.message + '</div>';
+  document.getElementById('s-dashboard').innerHTML = '<div style="padding:20px;color:#ef4444;font-size:13px">RD خطأ: ' + e.message + '<br>Line: ' + e.stack + '</div>';
 }
 </script>
 </body>
