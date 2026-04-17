@@ -8,28 +8,28 @@
 <meta name="apple-mobile-web-app-title" content="محافظي">
 <meta name="theme-color" content="#0d0d1a">
 <title>المحافظ الاستثمارية</title>
-<link rel="apple-touch-icon" href="icon.png">
-<link rel="manifest" href="manifest.json">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+
+
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{--a:#f59e0b;--a2:#d97706;--adim:rgba(245,158,11,.15);--adim2:rgba(245,158,11,.3);--bg:#0d0d1a;--bg2:#1a1a2e;--bg3:rgba(255,255,255,.05);--bg4:rgba(255,255,255,.03);--brd:rgba(255,255,255,.09);--brd2:rgba(255,255,255,.14);--txt:#fff;--txt2:#aaa;--txt3:#555;--inp:rgba(255,255,255,.08);--modal:#1a1a2e;--hdr:linear-gradient(135deg,#1a1a3e,#0d0d1a)}
-body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;max-width:480px;margin:0 auto;padding-bottom:20px}
+body{font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;max-width:480px;margin:0 auto;padding-bottom:20px}
 .hdr{background:var(--hdr);padding:13px 15px 0;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--brd)}
 .hdr-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .logo{display:flex;align-items:center;gap:10px}
 .logo-dot{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--a2));display:flex;align-items:center;justify-content:center;font-size:16px;color:#000;font-weight:900;flex-shrink:0}
 .logo-text{font-size:17px;font-weight:900}
 .hdr-btns{display:flex;gap:6px}
-.ico-btn{background:var(--bg3);border:1px solid var(--brd);color:var(--txt2);border-radius:10px;padding:6px 10px;font-size:14px;cursor:pointer;font-family:inherit}
+.ico-btn{background:var(--bg3);border:1px solid var(--brd);color:var(--txt2);border-radius:10px;padding:6px 10px;font-size:14px;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif}
 .frow{display:flex;gap:5px;overflow-x:auto;padding:8px 0 6px;scrollbar-width:none}
 .frow::-webkit-scrollbar{display:none}
-.fbtn{background:var(--bg3);color:var(--txt2);border:1px solid var(--brd);border-radius:20px;padding:4px 12px;font-size:11px;white-space:nowrap;cursor:pointer;font-family:inherit;transition:all .2s}
+.fbtn{background:var(--bg3);color:var(--txt2);border:1px solid var(--brd);border-radius:20px;padding:4px 12px;font-size:11px;white-space:nowrap;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;transition:all .2s}
 .fbtn.on{background:var(--a);color:#000;font-weight:700;border-color:var(--a)}
 .tabs{display:flex;overflow-x:auto;gap:0;border-bottom:1px solid var(--brd);scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;background:none;border:none;border-bottom:2px solid transparent;padding:8px 13px 7px;color:var(--txt3);font-size:9px;cursor:pointer;font-family:inherit;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:2px;transition:color .2s}
+.tab{flex:0 0 auto;background:none;border:none;border-bottom:2px solid transparent;padding:8px 13px 7px;color:var(--txt3);font-size:9px;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:2px;transition:color .2s}
 .tab.on{color:var(--a);border-bottom-color:var(--a)}
 .tab-ic{font-size:13px}
 .screen{display:none;padding:12px 13px 24px}
@@ -48,7 +48,7 @@ body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--t
 .bw{background:rgba(251,191,36,.13);color:#f59e0b}
 .bi{background:rgba(96,165,250,.13);color:#60a5fa}
 .ba{background:var(--adim);color:var(--a)}
-.btn{border:none;border-radius:8px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;transition:all .15s}
+.btn{border:none;border-radius:8px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;white-space:nowrap;transition:all .15s}
 .btn:active{opacity:.75}
 .btn-p{background:var(--a);color:#000;flex:1}
 .btn-s{background:var(--bg3);color:var(--txt);border:1px solid var(--brd);flex:1}
@@ -56,9 +56,9 @@ body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--t
 .btn-d{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
 .btn-sell{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2);flex:1}
 .brow{display:flex;gap:6px;margin-top:9px}
-.inp{width:100%;background:var(--inp);border:1px solid var(--brd2);border-radius:8px;padding:8px 11px;color:var(--txt);font-size:13px;text-align:right;font-family:inherit;outline:none}
+.inp{width:100%;background:var(--inp);border:1px solid var(--brd2);border-radius:8px;padding:8px 11px;color:var(--txt);font-size:13px;text-align:right;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;outline:none}
 .inp:focus{border-color:var(--a)}
-.sel{width:100%;background:var(--inp);border:1px solid var(--brd2);border-radius:8px;padding:8px 11px;color:var(--txt);font-size:13px;font-family:inherit;outline:none}
+.sel{width:100%;background:var(--inp);border:1px solid var(--brd2);border-radius:8px;padding:8px 11px;color:var(--txt);font-size:13px;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;outline:none}
 .sel option{background:var(--modal)}
 .fld{margin-bottom:10px}
 .lbl{font-size:11px;color:var(--txt2);margin-bottom:3px}
@@ -86,6 +86,20 @@ body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--t
 .chk-box{width:18px;height:18px;border-radius:4px;border:2px solid var(--brd2);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;transition:all .15s}
 .dchk.on .chk-box{background:#ef4444;border-color:#ef4444;color:#fff}
 </style>
+<meta name="mobile-web-app-capable" content="yes">
+<script>
+// Fix standalone mode navigation
+if(window.navigator.standalone){
+  document.addEventListener('click',function(e){
+    var a=e.target;
+    while(a&&a.tagName!=='A')a=a.parentNode;
+    if(a&&a.href&&a.href.indexOf(location.host)>-1){
+      e.preventDefault();
+      location.href=a.href;
+    }
+  });
+}
+</script>
 </head>
 <body>
 <div class="hdr">
@@ -807,7 +821,7 @@ function RSt(){
     +'<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px">'
     +themes.map(function(t){
       var on=D.theme===t.id;
-      return '<button onclick="STH(\''+t.id+'\',\''+t.c+'\')" style="background:'+(on?t.c+'22':'var(--bg3)')+';border:2px solid '+(on?t.c:'var(--brd)')+';border-radius:11px;padding:8px 13px;display:flex;align-items:center;gap:7px;color:var(--txt);font-size:12px;font-family:inherit;cursor:pointer;font-weight:'+(on?700:400)+';">'
+      return '<button onclick="STH(\''+t.id+'\',\''+t.c+'\')" style="background:'+(on?t.c+'22':'var(--bg3)')+';border:2px solid '+(on?t.c:'var(--brd)')+';border-radius:11px;padding:8px 13px;display:flex;align-items:center;gap:7px;color:var(--txt);font-size:12px;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;cursor:pointer;font-weight:'+(on?700:400)+';">'
         +'<div style="width:13px;height:13px;border-radius:50%;background:'+t.c+'"></div>'+t.l+(on?' ✓':'')+'</button>';
     }).join('')+'</div>'
     +'<div class="dvd"></div>'
@@ -815,7 +829,7 @@ function RSt(){
     +'<div style="display:flex;gap:8px;margin-bottom:16px">'
     +[{k:'QAR',l:'🇶🇦 ريال قطري'},{k:'USD',l:'🇺🇸 دولار أمريكي'}].map(function(c){
       var on=D.currency===c.k;
-      return '<button onclick="SC(\''+c.k+'\')" style="flex:1;background:'+(on?'var(--adim)':'var(--bg3)')+';border:2px solid '+(on?'var(--a)':'var(--brd)')+';border-radius:11px;padding:10px;color:'+(on?'var(--a)':'var(--txt2)')+';font-weight:'+(on?700:400)+';font-family:inherit;cursor:pointer;font-size:13px">'+c.l+'</button>';
+      return '<button onclick="SC(\''+c.k+'\')" style="flex:1;background:'+(on?'var(--adim)':'var(--bg3)')+';border:2px solid '+(on?'var(--a)':'var(--brd)')+';border-radius:11px;padding:10px;color:'+(on?'var(--a)':'var(--txt2)')+';font-weight:'+(on?700:400)+';font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif;cursor:pointer;font-size:13px">'+c.l+'</button>';
     }).join('')+'</div>'
     +'<div class="dvd"></div>'
     +'<div style="font-size:12px;color:var(--txt2);margin-bottom:10px">البيانات</div>'
@@ -914,8 +928,8 @@ function openInvMgr(){
       +'<div style="width:34px;height:34px;border-radius:50%;background:'+inv.color+';display:flex;align-items:center;justify-content:center;font-weight:800;color:#000;font-size:14px">'+inv.name[0]+'</div>'
       +'<span style="font-size:14px;font-weight:600">'+inv.name+'</span></div>'
       +'<div style="display:flex;gap:6px">'
-      +'<button onclick="EIM('+inv.id+')" style="background:var(--adim);border:none;color:var(--a);border-radius:7px;padding:4px 10px;font-size:11px;cursor:pointer;font-family:inherit">تعديل</button>'
-      +'<button onclick="DIM('+inv.id+')" style="background:rgba(239,68,68,.1);border:none;color:#ef4444;border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;font-family:inherit">حذف</button>'
+      +'<button onclick="EIM('+inv.id+')" style="background:var(--adim);border:none;color:var(--a);border-radius:7px;padding:4px 10px;font-size:11px;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif">تعديل</button>'
+      +'<button onclick="DIM('+inv.id+')" style="background:rgba(239,68,68,.1);border:none;color:#ef4444;border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;font-family:-apple-system,system-ui,'Helvetica Neue',Arial,sans-serif">حذف</button>'
       +'</div></div>';
   });
   html+='<button class="btn btn-o" style="width:100%;margin-top:4px" onclick="NIM()">+ إضافة مستثمر</button>'
